@@ -7,7 +7,11 @@ var hello = helloFile.toString('utf-8');
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
+<<<<<<< HEAD
   response.send(hello);
+=======
+  response.send('Hello World 2!');
+>>>>>>> upstream/master
 });
 
 var port = process.env.PORT || 5000;
